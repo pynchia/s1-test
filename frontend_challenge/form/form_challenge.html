@@ -1,0 +1,67 @@
+<!--​
+Assume there is an fictional API end-point that takes as input a two-letter EU country code and returns population for that country broken down by city.
+
+API endpoint: https://populationbycity.com
+Sample query for the UK: https://populationbycity.com/?q=UK (NOTE: this is not a real endpoint - making a request to it will not return data)
+Sample result:
+[{"London":3000000}, {"Oxford":5000}, {"Dover":1000}]
+​
+Build a simple page using html, css, and js.
+
+The page should have a form containing a two-letter input field for EU countries. e.g. UK, IT, NL...
+
+On form submit, the total population for the country entered will be displayed.
+​
+For instance, if a user inputs the UK code, the total population number to be displayed on the page is: 3006000
+-->
+​
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>frontend challenge</title>
+ </head>
+ <body>
+   <!-- your code goes here -->
+    <header>
+      Form challenge
+    </header>
+
+    <section class="countryform" style="margin-top: 32px;">
+      <table>
+        <tr>
+          <td>
+            <label for="countrycode">Country code:</label>
+          </td>
+          <td>
+            <input id="countrycode" name="countrycode" class="formfield" type="text" minlength=2 maxlength=2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td id="getpop" class="redbutt">
+            Get population
+          </td>
+      </table>
+    </section>
+    <section class="datasection" style="margin-top: 32px;">
+     <table id="data">
+      <tbody id="population">
+       <tr>
+        <td>
+          <p>Total population:</p>
+        </td>
+        <td>
+          <p id="totalpop"></p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </section>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+ </body>
+</html>

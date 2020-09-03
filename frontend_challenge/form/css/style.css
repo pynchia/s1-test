@@ -1,0 +1,29 @@
+body {
+  margin: 8px;
+  font-size: 18px;
+}
+
+header {
+  background-color: #6573ff;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+input {
+  font-size: 18px;
+}
+
+td.redbutt {
+	background-color: #c01000;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+p#totalpop {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
